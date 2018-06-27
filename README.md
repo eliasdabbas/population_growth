@@ -7,5 +7,5 @@ Select regions and countries to view regions/country's relative position compare
 ![](barchart_screenshot.png)
 
 
-Interactive map
+Interactive map of the same data:
 ![](map_screenshot.png)

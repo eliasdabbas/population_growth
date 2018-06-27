@@ -4,6 +4,10 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 import pandas as pd
+import logging
+
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s==%(funcName)s==%(message)s')
 
 pop_growth_df = pd.read_csv('data/country_data_master.csv', 
                             usecols=['country', 'lon', 'lat', 'birth_rate', 
@@ -93,6 +97,7 @@ app.layout = html.Div([
 @app.callback(Output('pop_barchart', 'figure'),
              [Input('regions', 'value'), Input('countries', 'value')])
 def plot_countries(region, countries):
+    logging.info(msg=locals())
     df = pop_growth_df.sort_values(['pop_growth'])
     return {'data': [go.Bar(x=df['country'],
                             y=df['birth_rate'],
