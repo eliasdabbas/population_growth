@@ -67,7 +67,7 @@ app.layout = html.Div([
                                          font={'family': 'Palatino'},
                                          titlefont={'size': 22},
                                          paper_bgcolor='#eeeeee',
-                                         width=1420,
+                                         # width=1420,
                                          height=750,
                                          geo={'showland': True, 'landcolor': '#eeeeee',
                                               'countrycolor': '#cccccc', 
@@ -79,18 +79,18 @@ app.layout = html.Div([
                                               'coastlinecolor': '#cccccc',
                                               },
                                             )}),
-    html.A('@eliasdabbas', href='https://www.twitter.com/eliasdabbas'), 
-    html.P(),
-    html.Content('Data: CIA World Factobook  '),
-    html.A('Population Growth Rate', href='https://www.cia.gov/library/publications/the-world-factbook/fields/2002.html'),
-    html.Br(),
-    html.Content('  Code: '),
-    html.A('github.com/eliasdabbas/population_growth', href='https://github.com/eliasdabbas/population_growth'), html.Br(), html.Br(),
-    html.Content('The average annual percent change in the population, resulting from a surplus (or deficit) of births '
-                 'over deaths and the balance of migrants entering and leaving a country. The rate may be positive or negative. '
-                 'The growth rate is a factor in determining how great a burden would be imposed on a country by the changing '
-                 'needs of its people for infrastructure (e.g., schools, hospitals, housing, roads), resources (e.g., food, '
-                 'water, electricity), and jobs. Rapid population growth can be seen as threatening by neighboring countries.')
+    # html.A('@eliasdabbas', href='https://www.twitter.com/eliasdabbas'),
+    # html.P(),
+    # html.Content('Data: CIA World Factobook  '),
+    # html.A('Population Growth Rate', href='https://www.cia.gov/library/publications/the-world-factbook/fields/2002.html'),
+    # html.Br(),
+    # html.Content('  Code: '),
+    # html.A('github.com/eliasdabbas/population_growth', href='https://github.com/eliasdabbas/population_growth'), html.Br(), html.Br(),
+    # html.Content('The average annual percent change in the population, resulting from a surplus (or deficit) of births '
+    #              'over deaths and the balance of migrants entering and leaving a country. The rate may be positive or negative. '
+    #              'The growth rate is a factor in determining how great a burden would be imposed on a country by the changing '
+    #              'needs of its people for infrastructure (e.g., schools, hospitals, housing, roads), resources (e.g., food, '
+    #              'water, electricity), and jobs. Rapid population growth can be seen as threatening by neighboring countries.')
     
 ], style={'background-color': '#eeeeee'})
 
